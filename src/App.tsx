@@ -1,12 +1,12 @@
-import './App.css';
+import { Container } from '@material-ui/core';
+import PageLayout from 'containers/PageLayout/PageLayout';
+import { FC } from 'react';
 
-const App = () => {
+const App: FC = () => {
   return (
-    <div className='App'>
-      <header className='App-header'></header>
-      <main></main>
-      <footer></footer>
-    </div>
+    <Container maxWidth='md'>
+      <PageLayout />
+    </Container>
   );
 };
 
